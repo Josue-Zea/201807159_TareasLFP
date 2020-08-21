@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<definicion>
+  <empleado id="1">
+      <nombre>Josue</nombre>
+      <apellido>Zea</apellido>
+      <telefono>19042710</telefono>
+      <email>jdzeaherrera@gmail.com</email>
+  </empleado>
+  <empleado id="2">
+      <nombre>Ana</nombre>
+      <apellido>Flores</apellido>
+      <telefono>23395181</telefono>
+      <email>anarivera@hotmail.com</email>
+  </empleado>
+  <empleado id="3">
+      <nombre>Bryan</nombre>
+      <apellido>Mendez</apellido>
+      <telefono>34709563</telefono>
+      <email>brmendez@gmail.com</email>
+  </empleado>
+  <empleado id="4">
+      <nombre>Lucas</nombre>
+      <apellido>Monterroso</apellido>
+      <telefono>23561425</telefono>
+      <email>lumonte@gmail.com</email>
+  </empleado>
+</definicion>
