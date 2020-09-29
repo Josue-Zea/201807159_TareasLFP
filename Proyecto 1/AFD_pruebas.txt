@@ -1,0 +1,211 @@
+            if self.estado == 0:
+                if self.transicion == "c":
+                    self.estado = 1
+                elif self.transicion == "l":
+                    self.estado = 11
+                elif self.transicion == "u":
+                    self.estado = 20
+                elif self.transicion == "s":
+                    self.estado = 26
+                else:
+                    return False
+            elif self.estado == 1:
+                if self.transicion == "r":
+                    self.estado = 2
+                else:
+                    return False
+            elif self.estado == 2:
+                if self.transicion == "e":
+                    self.estado = 3
+                else:
+                    return False
+            elif self.estado == 3:
+                if self.transicion == "a":
+                    self.estado = 4
+                else:
+                    return False
+            elif self.estado == 4:
+                if self.transicion == "t":
+                    self.estado = 5
+                else:
+                    return False
+            elif self.estado == 5:
+                if self.transicion == "e":
+                    self.estado = 6
+                else:
+                    return False
+            elif self.estado == 6:
+                if self.transicion == "s":
+                    self.estado = 7
+                else:
+                    return False
+            elif self.estado == 7:
+                if self.transicion == "e":
+                    self.estado = 8
+                else:
+                    return False
+            elif self.estado == 8:
+                if self.transicion == "t":
+                    self.estado = 9
+                else:
+                    return False
+            elif self.estado == 9:
+                if self.transicion !="":
+                    variable1+=self.transicion
+                    if i == (len(self.cadena)-1):
+                        AgregarBaseDatos(variable1)
+                        self.estado = 10
+            elif self.estado == 11:
+                if self.transicion == "o":
+                    self.estado = 12
+                else:
+                    return False
+            elif self.estado == 12:
+                if self.transicion == "a":
+                    self.estado = 13
+                else:
+                    return False
+            elif self.estado == 13:
+                if self.transicion == "d":
+                    self.estado = 14
+                else:
+                    return False
+            elif self.estado == 14:
+                if self.transicion == "i":
+                    self.estado = 15
+                else:
+                    return False
+            elif self.estado == 15:
+                if self.transicion == "n":
+                    self.estado = 16
+                else:
+                    return False
+            elif self.estado == 16:
+                if self.transicion == "t":
+                    self.estado = 17
+                else:
+                    return False
+            elif self.estado == 17:
+                if self.transicion == "o":
+                    self.estado = 18
+                else:
+                    return False
+            elif self.estado == 18:
+                if self.transicion !="":
+                    variable1+=self.transicion
+                    if self.transicion == "f":
+                        variable2+=self.transicion
+                    elif self.transicion == "i":
+                        variable2 += self.transicion
+                    elif self.transicion == "l":
+                        variable2 += self.transicion
+                    elif self.transicion == "e":
+                        variable2 += self.transicion
+                    elif self.transicion == "s":
+                        variable2 += self.transicion
+                        if variable2[len(variable2)-5:len(variable2)]=="files":
+                            variable1=variable1[0:len(variable1)-5]
+                            self.estado=19
+                            variable2=""
+            elif self.estado == 19:
+                variable2+=self.transicion
+                if i == (len(self.cadena) - 1) and CargaraBaseDatos(variable1, variable2) == True:
+                    self.estado = 10
+            elif self.estado == 20:
+                if self.transicion == "s":
+                    self.estado = 21
+                else:
+                    return False
+            elif self.estado == 21:
+                if self.transicion == "e":
+                    self.estado = 22
+                else:
+                    return False
+            elif self.estado == 22:
+                if self.transicion == "s":
+                    self.estado = 23
+                else:
+                    return False
+            elif self.estado == 23:
+                if self.transicion == "e":
+                    self.estado = 24
+                else:
+                    return False
+            elif self.estado == 24:
+                if self.transicion == "t":
+                    self.estado = 25
+                else:
+                    return False
+            elif self.estado == 25:
+                if i == (len(self.cadena) - 1):
+                    variable1 += self.transicion
+                    BaseEnUso(variable1)
+                    self.estado = 10
+                else:
+                    variable1+=self.transicion
+            elif self.estado == 26:
+                if self.transicion == "e":
+                    self.estado = 27
+                else:
+                    return False
+            elif self.estado == 27:
+                if self.transicion == "l":
+                    self.estado = 28
+                else:
+                    return False
+            elif self.estado == 28:
+                if self.transicion == "e":
+                    self.estado = 29
+                else:
+                    return False
+            elif self.estado == 29:
+                if self.transicion == "c":
+                    self.estado = 30
+                else:
+                    return False
+            elif self.estado == 30:
+                if self.transicion == "c":
+                    self.estado = 31
+                elif self.transicion == "t":
+                    self.estado = 36
+                else:
+                    return False
+            elif self.estado == 31:
+                if self.transicion == "i":
+                    self.estado = 32
+                else:
+                    return False
+            elif self.estado == 32:
+                if self.transicion == "o":
+                    self.estado = 33
+                else:
+                    return False
+            elif self.estado == 33:
+                if self.transicion == "n":
+                    self.estado = 34
+                else:
+                    return False
+            elif self.estado == 34:
+                if self.transicion == "a":
+                    self.estado = 35
+                else:
+                    return False
+            elif self.estado == 35:
+                if self.transicion == "r":
+                    self.estado = 36
+                else:
+                    return False
+            elif self.estado == 36:
+                variable1+=self.transicion
+                if variable1 == "*" and i == len(self.cadena)-1:
+                    self.estado = 10
+                    ComandoSel(variable1, variable2)
+                if len(variable1) >= 5:
+                    if variable1[len(variable1) - 5:len(variable1)].lower() == "where":
+                        self.estado = 37
+                        variable1 = variable1[0:len(variable1) - 5]
+            elif self.estado == 37:
+                variable2+=self.transicion
+                if i == len(self.cadena)-1:
+                    ComandoSel(variable1,variable2)
+                    self.estado = 10

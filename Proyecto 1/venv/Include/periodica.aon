@@ -1,0 +1,26 @@
+(
+    <
+        [Nombre] = "Bario",
+        [electronegatividad] = 0.89,
+        [Peso_atomico] = 137.327,
+	[duro] = true
+    >,
+    <
+        [Nombre] = "Sodio",
+        [electronegatividad] = -0.83,
+        [Peso_atomico] = 22.989,
+	[duro] = false
+    >,
+    <
+        [Nombre] = "Cesio",
+        [electronegatividad] = 0.79,
+        [Peso_atomico] = 132.905,
+	[duro] = true
+    >,
+    <
+        [Nombre] = "Francio",
+        [electronegatividad] = -0.7,
+        [Peso_atomico] = 223,
+	[duro] = true
+    >
+)

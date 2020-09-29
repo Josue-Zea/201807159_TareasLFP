@@ -1,0 +1,38 @@
+(
+    <
+        [Nombre] = "Nombre1",
+        [electronegatividad] = 0.31,
+        [Peso_atomico] = 21.33,
+	[duro] = false
+    >,
+    <
+        [Nombre] = "Nombre2",
+        [electronegatividad] = 0.83,
+        [Peso_atomico] = 22.989,
+	[duro] = false
+    >,
+    <
+        [Nombre] = "Nombre3",
+        [electronegatividad] = 0.22,
+        [Peso_atomico] = 132.905,
+	[duro] = false
+    >,
+    <
+        [Nombre] = "Nombre4",
+        [electronegatividad] = 0.45,
+        [Peso_atomico] = 625.2,
+	[duro] = true
+    >,
+    <
+        [Nombre] = "Nombre5",
+        [electronegatividad] = 0.75,
+        [Peso_atomico] = 12.3,
+	[duro] = false
+    >,
+    <
+        [Nombre] = "Nombre6",
+        [electronegatividad] = 0.76,
+        [Peso_atomico] = 223,
+	[duro] = false
+    >
+)

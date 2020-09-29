@@ -1,0 +1,37 @@
+(
+    <
+        [marca] = "Honda",
+        [kilometraje] = 200000,
+        [funciona] = true
+    >,
+    <
+        [marca] = "Mitsubishi",
+        [kilometraje] = 0,
+        [funciona] = false
+    >,
+    <
+        [marca] = "Honda",
+        [kilometraje] = 2500,
+        [funciona] = false
+    >,
+    <
+        [marca] = "BMW",
+        [kilometraje] = 7000,
+        [funciona] = true
+    >,
+    <
+        [marca] = "Honda",
+        [kilometraje] = 2000,
+        [funciona] = false
+    >,
+    <
+        [marca] = "Toyota",
+        [kilometraje] = 1000,
+        [funciona] = true
+    >,
+    <
+        [marca] = "Honda",
+        [kilometraje] = 700,
+        [funciona] = false
+    >
+)
